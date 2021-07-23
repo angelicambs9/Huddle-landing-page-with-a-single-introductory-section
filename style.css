@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); 
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --rosa: hsl(300, 69%, 71%);
+}
+body{
+    background-color: var(--violet);
+    background-image: url(bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+#total{
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    margin: auto;
+    color: white;
+
+}
+.logo{
+    height: 2rem;
+    
+}
+.imagemdesktop{
+    padding-top: 1em;
+   padding-left: 1em;
+    height: 12rem;
+}
+
+.texto{
+    padding: 5%;
+    text-align: center;
+}
+h1{
+    font-weight: 900;
+}
+footer{
+    text-align: center;
+}
+p{
+    padding: 2rem;
+}
+button{
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 25px;
+    color: var(--violet);
+    width: 10em;
+    box-shadow: violet;
+}
+button:hover { 
+ background-color: var(--rosa);
+
+}
+a{  color: white;
+    padding: 2%;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+a:hover{
+    color: var(--rosa);
+    border:1px solid var(--rosa);
+}
+
+@media(min-width:551px){
+    #total{
+        margin-top: 2%;
+        width: 70%;
+        background-image: url(bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-color: var(--violet);
+       
+    }
+    body{
+        background-image: none;
+        background-color: white;
+    }
+  
+    .imagemdesktop{
+        height: 20rem;
+
+    }
+    .meio{
+        display: inline-flex;
+        
+    }
+     #total{
+         display: flex;
+         flex-direction: column;
+         align-content: space-between;
+        
+        
+    }
+   .logo{
+     margin-bottom: 7%;
+   }
+   .imagem{
+       margin-left: 3%;
+   }
+   footer{
+    text-align: end;
+    margin-bottom: 2em;
+    margin-right: 2em;
+}
+a{
+    padding: 1%;
+}
+}
